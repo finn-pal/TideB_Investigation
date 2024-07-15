@@ -1,4 +1,6 @@
 appnope==0.1.4
+astropy==6.1.1
+astropy-iers-data==0.2024.7.15.0.31.42
 asttokens==2.4.1
 click==8.1.7
 comm==0.2.2
@@ -31,10 +33,12 @@ prompt_toolkit==3.0.47
 psutil==6.0.0
 ptyprocess==0.7.0
 pure-eval==0.2.2
+pyerfa==2.0.1.4
 Pygments==2.18.0
 pynbody==1.6.0.post0
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
+PyYAML==6.0.1
 pyzmq==26.0.3
 scipy==1.14.0
 six==1.16.0
