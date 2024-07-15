@@ -35,6 +35,7 @@ sec2myr = 60.0 * 60.0 * 24.0 * 365.0 * 1e6
 # %%
 # sys.path.append("/Volumes/My Passport for Mac/TideB")
 timestep = 89
+timestep = 29
 
 fldrpth = "/Volumes/My Passport for Mac/TideB/"
 init_file = "GLX.000001"
@@ -104,7 +105,7 @@ vmax = 600
 plt.clf()
 figS = plt.figure(2)
 axS = figS.add_subplot(1, 1, 1)
-im_S = sph.image(s.star, qty="rho", width="40 kpc", cmap="bone", subplot=axS, show_cbar=True)
+im_S = sph.image(s.star, qty="rho", width="200 kpc", cmap="bone", subplot=axS, show_cbar=True)
 plt.xlabel("$x \\;{\\rm [kpc]}$", fontsize=15)
 plt.ylabel("$y \\;{\\rm [kpc]}$", fontsize=15)
 axS.annotate(timestr + "Myr", xy=(0.7, 0.9), xycoords="axes fraction", color="white", fontsize=13)
@@ -143,7 +144,7 @@ plt.savefig(PRINT_DIR + "dm_density.pdf")
 print("plotting velocities")
 res = 2000
 cb = (True, True, True, True)
-bx = 12
+bx = 20
 wx = str(2.0 * bx) + " kpc"
 aza = "rho"  # uses a column average
 
@@ -168,7 +169,7 @@ im = sph.image(
 plt.xlabel("$x \\;{\\rm [kpc]}$", fontsize=15)
 plt.ylabel("$y \\;{\\rm [kpc]}$", fontsize=15)
 axVr.annotate(timestr + "Myr", xy=(0.7, 0.9), xycoords="axes fraction", color="black", fontsize=13)
-plt.ylim(-10, 10)
+plt.ylim(-20, 20)
 plt.savefig(PRINT_DIR + "radial_velocity.pdf")
 
 # -- Face-on projection of Tangential velocity (v_t)
@@ -193,7 +194,7 @@ sph.image(
 plt.xlabel("$x \\;{\\rm [kpc]}$", fontsize=15)
 plt.ylabel("$y \\;{\\rm [kpc]}$", fontsize=15)
 axVt.annotate(timestr + "Myr", xy=(0.7, 0.9), xycoords="axes fraction", color="white", fontsize=13)
-plt.ylim(-10, 10)
+plt.ylim(-20, 20)
 plt.savefig(PRINT_DIR + "tangential_velocity.pdf")
 
 # %%
