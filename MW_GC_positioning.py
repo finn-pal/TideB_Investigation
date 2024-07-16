@@ -120,4 +120,14 @@ plt.text(
     transform=axs[0, 1].transAxes,
 )
 
+# https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_performance_verification/ssec_dm_chemical_cartography.html
+
+x_s, y_s, z_s = 8.249, 0, 0.0208
+c_s = "green"
+s_s = 20
+
+axs[0, 0].scatter(x_s, y_s, marker="*", c=c_s, s=s_s)
+axs[1, 0].scatter(x_s, z_s, marker="*", c=c_s, s=s_s)
+axs[1, 1].scatter(y_s, z_s, marker="*", c=c_s, s=s_s)
+
 plt.show()

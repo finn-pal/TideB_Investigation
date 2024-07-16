@@ -67,6 +67,4 @@ pps = pynbody.analysis.profile.Profile(s.stars, max=r_enc, min="0.01 kpc", type=
 
 print("------SETUP-DONE------")
 
-h = s.halos()
-
 # print(pynbody.analysis.halo.center_of_mass(s))
