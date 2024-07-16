@@ -13,7 +13,7 @@ size_lims = 40
 ticks = np.linspace(-size_lims, size_lims, 5)
 
 select_min_xy = 25  # kpc
-select_min_xz = 3  # kpc
+select_min_xz = 2  # kpc
 
 size = 2
 lw = 1
